@@ -1,0 +1,862 @@
+{
+  "1496203839450386505": {
+    "features": {
+      "antispam": false,
+      "antilink": false,
+      "antiinvite": false,
+      "antiphishing": false,
+      "anticaps": false,
+      "antiemoji": false,
+      "antimention": false,
+      "antibadwords": false,
+      "antizalgo": false,
+      "antinewcomer": false,
+      "antiraid": false,
+      "antibots": false,
+      "antifake": false,
+      "antinuke": false
+    },
+    "rules": {
+      "antispam": {
+        "action": "timeout",
+        "minutes": 5,
+        "warn": true
+      },
+      "antilink": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antiinvite": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antiphishing": {
+        "action": "timeout",
+        "minutes": 1440,
+        "warn": true
+      },
+      "anticaps": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antiemoji": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antimention": {
+        "action": "timeout",
+        "minutes": 10,
+        "warn": true
+      },
+      "antibadwords": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antizalgo": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": false
+      },
+      "antinewcomer": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": false
+      }
+    },
+    "settings": {
+      "admin_exempt": 1,
+      "spam_messages": 5,
+      "spam_seconds": 5,
+      "mention_limit": 5,
+      "caps_percent": 70,
+      "emoji_limit": 8,
+      "zalgo_limit": 6,
+      "newcomer_minutes": 10,
+      "fake_days": 7,
+      "fake_noavatar": 0,
+      "raid_joins": 5,
+      "raid_seconds": 10,
+      "raid_duration": 120,
+      "raid_lockdown": 0,
+      "warn_limit": 3,
+      "warn_timeout": 30,
+      "warn_kick": 0,
+      "warn_ban": 0
+    },
+    "owners": [],
+    "whitelist": [],
+    "trusted": {},
+    "badwords": [],
+    "linkWhitelist": [],
+    "blockedDomains": [],
+    "ignoredChannels": [],
+    "ignoredRoles": [],
+    "shield": {
+      "restore": true,
+      "autoPanic": false,
+      "notifyOwner": true,
+      "punishment": "ban",
+      "actions": {
+        "channelDelete": {
+          "enabled": true,
+          "limit": 2,
+          "seconds": 20
+        },
+        "channelCreate": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 20
+        },
+        "channelUpdate": {
+          "enabled": true,
+          "limit": 4,
+          "seconds": 20
+        },
+        "roleDelete": {
+          "enabled": true,
+          "limit": 2,
+          "seconds": 20
+        },
+        "roleCreate": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 20
+        },
+        "roleUpdate": {
+          "enabled": true,
+          "limit": 4,
+          "seconds": 20
+        },
+        "dangerousPerm": {
+          "enabled": true,
+          "limit": 1,
+          "seconds": 30
+        },
+        "memberBan": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 30
+        },
+        "memberKick": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 30
+        },
+        "botAdd": {
+          "enabled": true,
+          "limit": 1,
+          "seconds": 60
+        },
+        "webhookCreate": {
+          "enabled": true,
+          "limit": 1,
+          "seconds": 60
+        },
+        "guildUpdate": {
+          "enabled": true,
+          "limit": 2,
+          "seconds": 60
+        },
+        "emojiDelete": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 30
+        }
+      },
+      "dangerousPerms": [
+        "Administrator",
+        "ManageGuild",
+        "ManageRoles",
+        "ManageChannels",
+        "ManageWebhooks",
+        "BanMembers",
+        "KickMembers",
+        "MentionEveryone"
+      ]
+    },
+    "panic": {
+      "active": false,
+      "snapshot": {}
+    },
+    "verification": {
+      "enabled": false,
+      "channel": null,
+      "verifiedRole": null,
+      "unverifiedRole": null,
+      "captcha": true,
+      "kickMinutes": 0,
+      "title": "التحقق من العضوية",
+      "description": "اضغط على الزر بالأسفل لإكمال التحقق والدخول إلى السيرفر."
+    },
+    "replies": [],
+    "warns": {},
+    "cases": 0,
+    "caseLog": [],
+    "tempbans": [],
+    "moderation": {
+      "dmUser": true
+    },
+    "tickets": {
+      "category": null,
+      "role": null,
+      "panelChannel": null,
+      "counter": 0,
+      "panel": {
+        "title": "الدعم الفني",
+        "description": "تحتاج مساعدة؟ اضغط على الزر بالأسفل لفتح تذكرة.",
+        "button": "فتح تذكرة",
+        "color": "#5865f2"
+      },
+      "welcome": "اكتب مشكلتك أو طلبك وسيرد عليك الفريق قريباً."
+    },
+    "logs": {
+      "channel": null,
+      "events": {
+        "messageDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "messageEdit": {
+          "enabled": true,
+          "channel": null
+        },
+        "bulkDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberJoin": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberLeave": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberBan": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberUnban": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberRoles": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberNick": {
+          "enabled": true,
+          "channel": null
+        },
+        "roleCreate": {
+          "enabled": true,
+          "channel": null
+        },
+        "roleDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "channelCreate": {
+          "enabled": true,
+          "channel": null
+        },
+        "channelDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "voice": {
+          "enabled": true,
+          "channel": null
+        },
+        "mod": {
+          "enabled": true,
+          "channel": null
+        },
+        "protection": {
+          "enabled": true,
+          "channel": null
+        },
+        "ticket": {
+          "enabled": true,
+          "channel": null
+        },
+        "verify": {
+          "enabled": true,
+          "channel": null
+        }
+      }
+    },
+    "welcome": {
+      "enabled": false,
+      "channel": null,
+      "message": "أهلاً {user} في **{server}**، أنت العضو رقم {count}",
+      "embed": true,
+      "color": "#5865f2",
+      "dm": false
+    },
+    "leave": {
+      "enabled": false,
+      "channel": null,
+      "message": "**{username}** غادر السيرفر",
+      "embed": true,
+      "color": "#ed4245"
+    },
+    "autorole": {
+      "enabled": false,
+      "humans": [],
+      "bots": []
+    },
+    "aliases": {
+      "enabled": true,
+      "prefix": "",
+      "list": [
+        {
+          "alias": "مسح",
+          "command": "clear"
+        },
+        {
+          "alias": "حظر",
+          "command": "ban"
+        },
+        {
+          "alias": "فك_حظر",
+          "command": "unban"
+        },
+        {
+          "alias": "طرد",
+          "command": "kick"
+        },
+        {
+          "alias": "كتم",
+          "command": "timeout"
+        },
+        {
+          "alias": "فك_كتم",
+          "command": "untimeout"
+        },
+        {
+          "alias": "قفل",
+          "command": "lock"
+        },
+        {
+          "alias": "فتح",
+          "command": "unlock"
+        },
+        {
+          "alias": "اخفاء",
+          "command": "hide"
+        },
+        {
+          "alias": "اظهار",
+          "command": "unhide"
+        },
+        {
+          "alias": "تحذير",
+          "command": "warn"
+        },
+        {
+          "alias": "تحذيرات",
+          "command": "warnings"
+        },
+        {
+          "alias": "مسح_تحذيرات",
+          "command": "clearwarns"
+        },
+        {
+          "alias": "بطيء",
+          "command": "slowmode"
+        },
+        {
+          "alias": "اسم",
+          "command": "nick"
+        },
+        {
+          "alias": "رتبة",
+          "command": "role add"
+        },
+        {
+          "alias": "سحب_رتبة",
+          "command": "role remove"
+        },
+        {
+          "alias": "قول",
+          "command": "say"
+        },
+        {
+          "alias": "افاتار",
+          "command": "avatar"
+        },
+        {
+          "alias": "معلومات",
+          "command": "userinfo"
+        },
+        {
+          "alias": "سيرفر",
+          "command": "serverinfo"
+        },
+        {
+          "alias": "بنج",
+          "command": "ping"
+        },
+        {
+          "alias": "مساعدة",
+          "command": "help"
+        },
+        {
+          "alias": "اغلاق",
+          "command": "ticket close"
+        },
+        {
+          "alias": "اضافة",
+          "command": "ticket add"
+        },
+        {
+          "alias": "لوحة",
+          "command": "dashboard"
+        },
+        {
+          "alias": "سجل",
+          "command": "history"
+        }
+      ]
+    }
+  },
+  "1571529630870143056": {
+    "features": {
+      "antispam": true,
+      "antilink": true,
+      "antiinvite": true,
+      "antiphishing": true,
+      "anticaps": true,
+      "antiemoji": true,
+      "antimention": true,
+      "antibadwords": true,
+      "antizalgo": true,
+      "antinewcomer": true,
+      "antiraid": true,
+      "antibots": true,
+      "antifake": true,
+      "antinuke": true
+    },
+    "rules": {
+      "antispam": {
+        "action": "timeout",
+        "minutes": 5,
+        "warn": true
+      },
+      "antilink": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antiinvite": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antiphishing": {
+        "action": "timeout",
+        "minutes": 1440,
+        "warn": true
+      },
+      "anticaps": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antiemoji": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antimention": {
+        "action": "timeout",
+        "minutes": 10,
+        "warn": true
+      },
+      "antibadwords": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": true
+      },
+      "antizalgo": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": false
+      },
+      "antinewcomer": {
+        "action": "delete",
+        "minutes": 10,
+        "warn": false
+      }
+    },
+    "settings": {
+      "admin_exempt": 1,
+      "spam_messages": 5,
+      "spam_seconds": 5,
+      "mention_limit": 5,
+      "caps_percent": 70,
+      "emoji_limit": 8,
+      "zalgo_limit": 6,
+      "newcomer_minutes": 10,
+      "fake_days": 7,
+      "fake_noavatar": 0,
+      "raid_joins": 5,
+      "raid_seconds": 10,
+      "raid_duration": 120,
+      "raid_lockdown": 0,
+      "warn_limit": 3,
+      "warn_timeout": 30,
+      "warn_kick": 0,
+      "warn_ban": 0
+    },
+    "owners": [],
+    "whitelist": [],
+    "trusted": {},
+    "badwords": [],
+    "linkWhitelist": [],
+    "blockedDomains": [],
+    "ignoredChannels": [],
+    "ignoredRoles": [],
+    "shield": {
+      "restore": true,
+      "autoPanic": true,
+      "notifyOwner": true,
+      "punishment": "ban",
+      "actions": {
+        "channelDelete": {
+          "enabled": true,
+          "limit": 2,
+          "seconds": 20
+        },
+        "channelCreate": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 20
+        },
+        "channelUpdate": {
+          "enabled": true,
+          "limit": 4,
+          "seconds": 20
+        },
+        "roleDelete": {
+          "enabled": true,
+          "limit": 2,
+          "seconds": 20
+        },
+        "roleCreate": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 20
+        },
+        "roleUpdate": {
+          "enabled": true,
+          "limit": 4,
+          "seconds": 20
+        },
+        "dangerousPerm": {
+          "enabled": true,
+          "limit": 1,
+          "seconds": 30
+        },
+        "memberBan": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 30
+        },
+        "memberKick": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 30
+        },
+        "botAdd": {
+          "enabled": true,
+          "limit": 1,
+          "seconds": 60
+        },
+        "webhookCreate": {
+          "enabled": true,
+          "limit": 1,
+          "seconds": 60
+        },
+        "guildUpdate": {
+          "enabled": true,
+          "limit": 2,
+          "seconds": 60
+        },
+        "emojiDelete": {
+          "enabled": true,
+          "limit": 3,
+          "seconds": 30
+        }
+      },
+      "dangerousPerms": [
+        "Administrator",
+        "ManageGuild",
+        "ManageRoles",
+        "ManageChannels",
+        "ManageWebhooks",
+        "BanMembers",
+        "KickMembers",
+        "MentionEveryone",
+        "ManageMessages",
+        "ModerateMembers",
+        "ManageNicknames",
+        "ManageGuildExpressions",
+        "ViewAuditLog",
+        "ManageEvents"
+      ]
+    },
+    "panic": {
+      "active": false,
+      "snapshot": {}
+    },
+    "verification": {
+      "enabled": true,
+      "channel": "1573453057679687740",
+      "verifiedRole": "1573448126709112933",
+      "unverifiedRole": "1573448136800862368",
+      "captcha": true,
+      "kickMinutes": 15,
+      "title": "التحقق من العضوية",
+      "description": "اضغط على الزر بالأسفل لإكمال التحقق والدخول إلى السيرفر."
+    },
+    "replies": [],
+    "warns": {},
+    "cases": 0,
+    "caseLog": [],
+    "tempbans": [],
+    "moderation": {
+      "dmUser": true
+    },
+    "tickets": {
+      "category": null,
+      "role": null,
+      "panelChannel": null,
+      "counter": 0,
+      "panel": {
+        "title": "الدعم الفني",
+        "description": "تحتاج مساعدة؟ اضغط على الزر بالأسفل لفتح تذكرة.",
+        "button": "فتح تذكرة",
+        "color": "#5865f2"
+      },
+      "welcome": "اكتب مشكلتك أو طلبك وسيرد عليك الفريق قريباً."
+    },
+    "logs": {
+      "channel": null,
+      "events": {
+        "messageDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "messageEdit": {
+          "enabled": true,
+          "channel": null
+        },
+        "bulkDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberJoin": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberLeave": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberBan": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberUnban": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberRoles": {
+          "enabled": true,
+          "channel": null
+        },
+        "memberNick": {
+          "enabled": true,
+          "channel": null
+        },
+        "roleCreate": {
+          "enabled": true,
+          "channel": null
+        },
+        "roleDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "channelCreate": {
+          "enabled": true,
+          "channel": null
+        },
+        "channelDelete": {
+          "enabled": true,
+          "channel": null
+        },
+        "voice": {
+          "enabled": true,
+          "channel": null
+        },
+        "mod": {
+          "enabled": true,
+          "channel": null
+        },
+        "protection": {
+          "enabled": true,
+          "channel": null
+        },
+        "ticket": {
+          "enabled": true,
+          "channel": null
+        },
+        "verify": {
+          "enabled": true,
+          "channel": null
+        }
+      }
+    },
+    "welcome": {
+      "enabled": false,
+      "channel": null,
+      "message": "أهلاً {user} في **{server}**، أنت العضو رقم {count}",
+      "embed": true,
+      "color": "#5865f2",
+      "dm": false
+    },
+    "leave": {
+      "enabled": false,
+      "channel": null,
+      "message": "**{username}** غادر السيرفر",
+      "embed": true,
+      "color": "#ed4245"
+    },
+    "autorole": {
+      "enabled": false,
+      "humans": [],
+      "bots": []
+    },
+    "aliases": {
+      "enabled": true,
+      "prefix": "",
+      "list": [
+        {
+          "alias": "مسح",
+          "command": "clear"
+        },
+        {
+          "alias": "حظر",
+          "command": "ban"
+        },
+        {
+          "alias": "فك",
+          "command": "unban"
+        },
+        {
+          "alias": "طرد",
+          "command": "kick"
+        },
+        {
+          "alias": "كتم",
+          "command": "timeout"
+        },
+        {
+          "alias": "فك_كتم",
+          "command": "untimeout"
+        },
+        {
+          "alias": "قفل",
+          "command": "lock"
+        },
+        {
+          "alias": "فتح",
+          "command": "unlock"
+        },
+        {
+          "alias": "اخفاء",
+          "command": "hide"
+        },
+        {
+          "alias": "اظهار",
+          "command": "unhide"
+        },
+        {
+          "alias": "تحذير",
+          "command": "warn"
+        },
+        {
+          "alias": "تحذيرات",
+          "command": "warnings"
+        },
+        {
+          "alias": "مسح_تحذيرات",
+          "command": "clearwarns"
+        },
+        {
+          "alias": "بطيء",
+          "command": "slowmode"
+        },
+        {
+          "alias": "اسم",
+          "command": "nick"
+        },
+        {
+          "alias": "رتبة",
+          "command": "role add"
+        },
+        {
+          "alias": "سحب_رتبة",
+          "command": "role remove"
+        },
+        {
+          "alias": "قول",
+          "command": "say"
+        },
+        {
+          "alias": "افاتار",
+          "command": "avatar"
+        },
+        {
+          "alias": "معلومات",
+          "command": "userinfo"
+        },
+        {
+          "alias": "سيرفر",
+          "command": "serverinfo"
+        },
+        {
+          "alias": "بنج",
+          "command": "ping"
+        },
+        {
+          "alias": "مساعدة",
+          "command": "help"
+        },
+        {
+          "alias": "اغلاق",
+          "command": "ticket close"
+        },
+        {
+          "alias": "اضافة",
+          "command": "ticket add"
+        },
+        {
+          "alias": "لوحة",
+          "command": "dashboard"
+        },
+        {
+          "alias": "سجل",
+          "command": "history"
+        }
+      ]
+    }
+  }
+}
